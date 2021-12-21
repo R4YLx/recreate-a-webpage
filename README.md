@@ -27,9 +27,9 @@ Recreate a webpage with only screenshots as reference provided by our teacher.
 #### 3 screenshots provided
 
 <div>
-<img src="https://github.com/R4YLx/recreate-a-webpage/blob/main/images/Screenshots/small-screen.png" width=15% height=15% style="display: inline;">
-<img src="https://github.com/R4YLx/recreate-a-webpage/blob/main/images/Screenshots/medium-screen.png" width=30% height=30% style="display: inline;">
-<img src="https://github.com/R4YLx/recreate-a-webpage/blob/main/images/Screenshots/large-screen.png" width=50% height=50% style="display: inline;">
+<img src="https://github.com/R4YLx/recreate-a-webpage/blob/main/images/Screenshots/small-screen.png" width=15% style="display: inline;">
+<img src="https://github.com/R4YLx/recreate-a-webpage/blob/main/images/Screenshots/medium-screen.png" width=30% style="display: inline;">
+<img src="https://github.com/R4YLx/recreate-a-webpage/blob/main/images/Screenshots/large-screen.png" width=50% style="display: inline;">
 </div>
 
 ## Tools
