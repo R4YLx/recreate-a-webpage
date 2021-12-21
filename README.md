@@ -38,4 +38,4 @@ Recreate a webpage with only screenshots as reference provided by our teacher.
 
 ## Screenshot
 
-<img src="https://github.com/R4YLx/recreate-a-webpage/blob/main/images/Screenshots/my-screenshot.png" width=70% height=70%>
+<img src="https://github.com/R4YLx/recreate-a-webpage/blob/main/images/Screenshots/my-screenshot.png" width=70%>
