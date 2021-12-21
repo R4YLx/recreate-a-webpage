@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<!-- Link to CSS -->
+		<link rel="stylesheet" href="style.css" />
+
+		<!-- Link to Google fonts -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800;900&family=Open+Sans:wght@400;500;600;700;800&family=Roboto+Slab:wght@400;500&display=swap"
+			rel="stylesheet"
+		/>
+
+		<!-- This is the script to FontAwesome kit -->
+		<script
+			src="https://kit.fontawesome.com/a1d9219911.js"
+			crossorigin="anonymous"
+		></script>
+
+		<!-- Title of the website -->
+		<title>Raymond Lam - Inlämningsuppgift</title>
+	</head>
+	<body>
+		<!-- Top navigation with logo and company name -->
+		<header>
+			<div class="logo">
+				<img src="images/tux.png" alt="linux-logo" class="tux" />
+				<h1>About Linux</h1>
+			</div>
+			<nav>
+				<div id="burgernav">
+					<a href="index.html">Hem</a>
+					<a href="#manjaro">Manjaro</a>
+					<a href="#ubuntu">Ubuntu</a>
+					<a href="#pops">Pop!_OS</a>
+					<a href="#links">Andra länkar</a>
+					<a href="#contact">Kontakt</a>
+				</div>
+				<a
+					href="javascript:void(0);"
+					class="burgermenu"
+					role="menu"
+					aria-label="Open menu"
+					onclick="myFunction()"
+				>
+					<i class="fa fa-bars" aria-hidden="true"></i>
+				</a>
+			</nav>
+		</header>
+		<!-- The main content of the site -->
+		<main>
+			<!-- Welcome picture and text i.e. hero -->
+			<div class="welcome" role="banner">
+				<img
+					src="images/welcome-img.jpg"
+					alt="welcome-image"
+					class="hero-pic"
+					aria-hidden="true"
+				/>
+				<div class="hero-text">
+					<h2>FOSS</h2>
+					<span>And why it's good for you.</span>
+				</div>
+			</div>
+			<!-- Sections with articles about open source platforms -->
+			<section class="main-article-section">
+				<!-- Article about Manjaro -->
+				<article class="main-articles" id="manjaro">
+					<img
+						src="images/manjaro_scrn.png"
+						alt="manjaro-screenshot"
+						class="scrn-img"
+					/>
+					<!-- Container for logo, title and text in the article -->
+					<div class="article-text-container">
+						<!-- Heading is a div that wraps logo and article title -->
+						<div class="heading">
+							<img
+								src="logos/manjaro.svg"
+								alt="manjaro-logo"
+								class="manjaro-logo logos"
+							/>
+							<h3>Manjaro</h3>
+						</div>
+						<p>
+							Is an accessible, friendly, open-source operating system.
+							Providing all the benefits of cutting-edge software combined with
+							a focus on getting started quickly, automated tools to require
+							less manual intervention, and help readily available when needed.
+							Manjaro is suitable for both newcomers and experienced computer
+							users.
+						</p>
+
+						<p>
+							Unlike proprietary operating systems you have full control over
+							your hardware without restrictions. This makes Manjaro a powerful
+							Operating System ideal in home, work, and development
+							environments.
+						</p>
+
+						<p>
+							It is easily possible to run many popular Windows applications,
+							using compatibility software such as Wine, PlayonLinux or Proton
+							via Steam. The examples given here are far from comprehensive!
+						</p>
+						<p>
+							Representing a perfect middle-ground for those who want good
+							performance, full control, and cutting-edge software but also a
+							degree of software stability.
+						</p>
+					</div>
+				</article>
+
+				<!-- Article about Ubuntu -->
+				<article class="main-articles" id="ubuntu">
+					<img
+						src="images/ubuntu_scrn.jpeg"
+						alt="ubuntu-screenshot"
+						class="scrn-img"
+					/>
+					<!-- Container for logo, title and text in the article -->
+					<div class="article-text-container">
+						<!-- Heading is a div that wraps logo and article title -->
+						<div class="heading">
+							<img
+								src="logos/ubuntu.png"
+								alt="ubuntu-logo"
+								class="ubuntu-logo logos"
+							/>
+							<h3>Ubuntu</h3>
+						</div>
+						<h4>Open source</h4>
+						<p>
+							Ubuntu has always been free to download, use and share. We believe
+							in the power of open source software; Ubuntu could not exist
+							without its worldwide community of voluntary developers.
+						</p>
+
+						<h4>Secure</h4>
+
+						<p>
+							With a built-in firewall and virus protection software, Ubuntu is
+							one of the most secure operating systems around. And the long-term
+							support releases give you five years of security patches and
+							updates.
+						</p>
+
+						<h4>Accessible</h4>
+
+						<p>
+							Computing is for everyone regardless of nationality, gender or
+							disability. Ubuntu is fully translated into over 50 languages and
+							includes essential assistive technologies.
+						</p>
+
+						<h4>Available on the largest range of hardware, ever</h4>
+
+						<p>
+							Canonical works closely with Dell, Lenovo and HP to certify that
+							Ubuntu works on a wide range of their laptops and workstations. It
+							means that a seamless Ubuntu experience is available out of the
+							box with more hardware choice than ever.
+						</p>
+
+						<p>
+							And Ubuntu isn’t just for the desktop, it is used in data centres
+							around the world powering every kind of server imaginable and is
+							by far, the most popular operating system in the cloud.
+						</p>
+					</div>
+				</article>
+
+				<!-- Article about Pop!_OS -->
+				<article class="main-articles" id="pops">
+					<img
+						src="images/popos_scrn.png"
+						alt="pops-screenshot"
+						class="scrn-img"
+					/>
+					<!-- Container for logo, title and text in the article -->
+					<div class="article-text-container pops-container">
+						<!-- Heading is a div that wraps logo and article title -->
+						<div class="heading">
+							<img
+								src="logos/popos.png"
+								alt="pops-logo"
+								class="pops-logo logos"
+							/>
+							<h3>Pop!_OS</h3>
+						</div>
+						<p>
+							Pop!_OS is an operating system for STEM and creative professionals
+							who use their computer as a tool to discover and create. Unleash
+							your potential on secure, reliable open source software. Based on
+							your exceptional curiosity, we sense you have a lot of it.
+						</p>
+
+						<!-- wraps each paragraph in the article -->
+						<div class="pops-article-text">
+							<h4>Auto-Tiling With Pop Shell</h4>
+
+							<p>
+								Pop!_OS uses auto-tiling for the same reason that people hire
+								assistants: Organizing your work is incredibly time-consuming.
+								Sure, you could still move, resize, and arrange windows
+								yourself, but why spend the time when your OS does it for you?
+								Auto-tiling helps you be both organized and efficient, and is
+								especially convenient on large displays.
+							</p>
+						</div>
+
+						<!-- wraps each paragraph in the article -->
+						<div class="pops-article-text">
+							<h4>Workspaces</h4>
+
+							<p>
+								Keep relevant content together and irrelevant content out of
+								sight. When the clutter overwhelms you, just toss it onto
+								another desktop. Problem solved.
+							</p>
+						</div>
+
+						<!-- wraps each paragraph in the article -->
+						<div class="pops-article-text">
+							<h4>Keyboard Navigation</h4>
+
+							<p>
+								Arm yourself with a dark-lord level of power at your fingertips.
+								Use keyboard shortcuts to:
+							</p>
+
+							<ul>
+								<li>Move/resize windows</li>
+								<li>Search for anything</li>
+								<li>Launch applications</li>
+							</ul>
+						</div>
+
+						<!-- wraps each paragraph in the article -->
+						<div class="pops-article-text">
+							<h4>Stacking</h4>
+							<p>
+								Stack application windows atop one another like tabs in a web
+								browser. Just remember to switch off of Steam when the boss
+								walks in.
+							</p>
+						</div>
+					</div>
+				</article>
+			</section>
+
+			<!-- h3 that divides section 1 and section 2 -->
+			<h3 class="divider" id="links">
+				Things that runs different flavours of Linux
+			</h3>
+
+			<!-- Short information section in the bottom -->
+			<!-- SVG icons size inherits from parent container. To adjust icon size, change size in tag class -->
+			<section class="short-info">
+				<!-- Info about Raspberry Pi -->
+				<article>
+					<div class="raspberry linux-info">
+						<i
+							class="fab fa-raspberry-pi fa-8x"
+							aria-label="raspberry-pi-icon"
+						></i>
+						<h4>Raspberry Pi</h4>
+						<p>
+							Raspberry Pi 400 is your complete personal computer, built into a
+							compact keyboard. Featuring a quad-core 64-bit processor, 4GB of
+							RAM, wireless networking, dual-display output, and 4K video
+							playback, as well as a 40-pin GPIO header, it's the most powerful
+							and easy-to-use Raspberry Pi computer yet.
+						</p>
+					</div>
+				</article>
+				<!-- Info about Linux -->
+				<article>
+					<div class="server linux-info">
+						<i class="fas fa-server fa-8x" aria-label="server-icon"></i>
+						<h4>Most servers run on Linux!</h4>
+						<p>
+							Facebook, Google, Amazon all use some variant of Linux on their
+							servers.
+						</p>
+					</div>
+				</article>
+
+				<!-- More info about Linux -->
+				<article>
+					<div class="companion linux-info">
+						<i class="fas fa-gamepad fa-8x" aria-label="gamepad-icon"></i>
+						<h4>Your every day companion</h4>
+						<p>
+							You use Linux indirectly every day. While surfing the web, using
+							your android device or just playing some games on your Playstation
+							5. Even your smart washing machine is probably using Linux.
+						</p>
+					</div>
+				</article>
+				<!-- Last info box -->
+				<article>
+					<div class="free linux-info">
+						<i class="fas fa-euro-sign fa-8x" aria-label="euro-sign-icon"></i>
+						<h4>
+							How can (a lot of) all these amazing things be totally free?
+						</h4>
+						<p>
+							Most things Linux are open source. This means the source code for
+							these things can be modified and used very freely to build other
+							things. Like the Android operating system or the version of BSD
+							running on the Playstation 5. It's a team effort where everyone
+							can contribute.
+						</p>
+					</div>
+				</article>
+			</section>
+		</main>
+
+		<!-- Footer with name of author and email -->
+		<footer id="contact">
+			<p>
+				Raymond Lam |
+				<a href="mailto:raymond.lam@medieinstitutet.se"
+					>raymond.lam@medieinstitutet.se</a
+				>
+			</p>
+		</footer>
+		<!-- Script for hamburger menu -->
+		<script>
+			function myFunction() {
+				var x = document.getElementById("burgernav");
+				if (x.style.display === "block") {
+					x.style.display = "none";
+				} else {
+					x.style.display = "block";
+				}
+			}
+		</script>
+	</body>
+</html>

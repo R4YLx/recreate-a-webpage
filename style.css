@@ -1,0 +1,374 @@
+/*// 
+
+------- INDEX -------
+
+1.Colors & general
+
+2.Typography
+
+3.Layout
+
+4.Hamburger menu
+
+5.Pseudo class - hover
+
+6.Images & logos & icons
+
+7.0.Media queries for larger screen due to Mobile First
+
+	7.1.Medium screen
+
+	7.2.Large screen
+
+//*/
+
+/*//---------------------------------------------------//*/
+/*// 1.Colors & general //*/
+:root {
+	--primary-color: #6b705c;
+	--secondary-color: #a5a58d;
+	--accent-color: #eddcd2;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+/*//---------------------------------------------------//*/
+/*// 2.Typography //*/
+
+h1 {
+	font-family: "Montserrat", sans-serif;
+	font-weight: 700;
+	font-size: 1.2rem;
+	color: white;
+	text-shadow: 1px 1px 1px black;
+}
+
+h2 {
+	font-family: "Open Sans", sans-serif;
+	font-weight: 700;
+	font-size: 2.1rem;
+	margin: 0;
+	color: white;
+	text-shadow: 1px 1px 1px black;
+}
+
+span {
+	font-family: "Montserrat", sans-serif;
+	font-weight: 400;
+	font-size: 1.3rem;
+	color: white;
+	text-shadow: 1px 1px 1px black;
+}
+
+h3 {
+	font-family: "Montserrat", sans-serif;
+	font-weight: 800;
+	font-size: 1.7rem;
+	margin: 0;
+}
+
+/* Styles the h3 between section 1 and 2 */
+.divider {
+	color: white;
+	text-shadow: 1px 1px 1px black;
+	text-align: center;
+	margin: 10px 0px 15px 0px;
+}
+
+h4 {
+	font-family: "Open Sans", sans-serif;
+	font-weight: 800;
+	font-size: 1.4rem;
+	margin: 0;
+}
+
+nav a {
+	font-family: "Open Sans", sans-serif;
+	font-weight: 500;
+	font-size: 1rem;
+	text-decoration: none;
+}
+
+p,
+li {
+	font-family: "Roboto Slab", serif;
+	font-weight: 400;
+	font-size: 1rem;
+}
+
+a {
+	font-family: "Open Sans", sans-serif;
+	font-weight: 400;
+	font-size: 1rem;
+	text-decoration: none;
+}
+
+.linux-info p {
+	text-align: left;
+}
+
+footer p,
+footer a {
+	font-size: 0.8rem;
+	font-weight: 500;
+	text-align: center;
+	margin: 0;
+}
+
+footer a {
+	color: var(--primary-color);
+}
+
+/*//---------------------------------------------------//*/
+/*// 3.Layout //*/
+
+body {
+	margin: 0;
+	background-color: var(--primary-color);
+}
+
+header {
+	background-color: var(--primary-color);
+	position: sticky;
+	top: 0;
+	z-index: 1;
+}
+
+nav {
+	margin: 0;
+}
+
+.logo {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	padding-left: 15px;
+}
+
+/* Hero section */
+.welcome {
+	position: relative;
+}
+
+.hero-text {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+	width: 100%;
+}
+
+section {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+article {
+	background-color: white;
+	padding: 15px;
+	margin-bottom: 10px;
+	width: 100%;
+}
+
+/* Removes margin on the last article */
+article:nth-last-of-type(1) {
+	margin-bottom: 0;
+}
+
+/* Article logo and title in a main article section */
+.heading {
+	display: flex;
+	flex-wrap: nowrap;
+	align-items: center;
+	padding: 15px 0px 15px 0px;
+}
+
+/* Padding on direct children under heading class */
+.heading > * {
+	padding-right: 3ch;
+}
+
+.linux-info {
+	padding: 10px;
+}
+
+footer {
+	background-color: var(--secondary-color);
+	padding: 15px;
+}
+
+/*//---------------------------------------------------//*/
+/*// 4.Hamburger menu //*/
+
+/* Styles the dropdown menu after clicking on hamburger menu */
+nav #burgernav {
+	display: none;
+	background-color: var(--secondary-color);
+}
+
+/* Styles the hamburger menu */
+nav a.burgermenu {
+	background: var(--secondary-color);
+	display: block;
+	position: absolute;
+	top: 0;
+	right: 0;
+	padding: 14px;
+}
+
+nav a {
+	color: white;
+	padding: 5px;
+	display: block;
+}
+
+/*//---------------------------------------------------//*/
+/*// 5.Pseudo class - hover //*/
+
+/* Hover effect on navigation bar */
+nav a:hover {
+	background-color: var(--accent-color);
+	color: var(--primary-color);
+	transition-duration: 0.5s;
+}
+
+a:hover {
+	color: var(--accent-color);
+	transition-duration: 0.3s;
+}
+
+/*//---------------------------------------------------//*/
+/*// 6.Images & logos & icons //*/
+img {
+	width: 100%;
+}
+
+.hero-pic {
+	max-width: 100%;
+}
+
+/* Linux logo */
+.tux {
+	width: 30px;
+}
+
+/* logos for the bottom section */
+.logos {
+	width: 40px;
+}
+
+/* Aligns icons in bottom section */
+/* SVG icons size inherits from parent container. To adjust icon size, change size in tag class */
+.linux-info {
+	text-align: center;
+}
+
+/*//---------------------------------------------------//*/
+/*// 7.0.Media queries for larger screen due to Mobile First//*/
+
+/*// 7.1.Medium screen //*/
+@media screen and (min-width: 720px) {
+	nav a {
+		text-align: center;
+	}
+
+	.welcome img {
+		max-height: 25vh;
+	}
+
+	section {
+		margin: 5px 15px 5px 15px;
+	}
+
+	/* Class for first section */
+	.main-articles {
+		display: flex;
+	}
+
+	/* Reverse the placement of image and text in a article */
+	.main-articles:nth-child(even) {
+		flex-direction: row-reverse;
+	}
+
+	.main-articles > * {
+		padding: 10px;
+	}
+
+	.scrn-img {
+		max-width: 50%;
+		object-fit: cover;
+		padding: 0;
+	}
+
+	.logos {
+		width: 80px;
+	}
+
+	.heading {
+		display: flex;
+	}
+
+	.pops-container {
+		display: flex;
+		flex-wrap: wrap;
+		width: 100%;
+	}
+
+	.pops-article-text {
+		width: 50%;
+		box-sizing: border-box;
+		padding-right: 20px;
+	}
+
+	.short-info article {
+		width: 50%;
+		padding: 0;
+	}
+
+	/* Removes bottom margin from last section */
+	section:nth-last-of-type(1) {
+		margin-bottom: 0;
+	}
+
+	/* Removes bottom margin from last two articles */
+	.short-info article:nth-last-of-type(2) {
+		margin-bottom: 0;
+	}
+
+	.linux-info {
+		padding: 20px;
+	}
+}
+
+/*// 7.2.Large screen //*/
+@media screen and (min-width: 1025px) {
+	section {
+		margin: auto;
+		width: 60%;
+	}
+
+	header {
+		padding-left: 20%;
+		display: flex;
+		align-items: center;
+	}
+
+	nav a.burgermenu {
+		display: none !important;
+	}
+
+	nav #burgernav {
+		display: flex !important;
+		background-color: var(--primary-color);
+		padding-left: 10%;
+		width: 100%;
+	}
+
+	nav a {
+		padding: 15px;
+		font-weight: 600;
+	}
+}
