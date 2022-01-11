@@ -1,7 +1,7 @@
 # recreate-a-webpage
 
 I recreated a [webpage](
-recreated-webpage.netlify.app) based on screenshots using HTML, CSS and simple JavaScript.
+https://recreated-webpage.netlify.app/) based on screenshots using HTML, CSS and simple JavaScript.
 
 ## Table of contents
 * [Assignment](#assignment)
